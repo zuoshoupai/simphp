@@ -1,9 +1,17 @@
-# 欢迎使用 zanePhp1.0
+# 欢迎使用 slimphp1.0
 
 ------
 
 这是一个轻量的接口框架，以slimV4为基础，引入medoo模块来操作数据库，并独立封装出控制器和模型，以及配置文件：
+### 快速上手
+```
+1. 克隆代码
+git clone https://github.com/zuoshoupai/simphp.git
+2. 安装依赖
+composer install
+3. ok!
 
+```
  
 ### 路由
 
