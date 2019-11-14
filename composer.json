@@ -1,0 +1,22 @@
+{
+    "name": "zane/simphp",
+    "description": "zane",
+    "type": "project",
+    "license": "1",
+    "authors": [
+        {
+            "name": "zane",
+            "email": "15373850656@163.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Controller\\":"app",
+            "Model\\":"app"
+         }
+    }
+}
