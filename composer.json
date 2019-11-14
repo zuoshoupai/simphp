@@ -2,7 +2,7 @@
     "name": "lize/zanephp",
     "description": "zane",
     "type": "project",
-    "license": "1",
+    "license": "MIT",
     "authors": [
         {
             "name": "lize",
@@ -12,13 +12,7 @@
     "minimum-stability": "beta",
     "require": {
         "php": ">=7.0"
-    },
-	"repositories":[
-        {
-            "type":"vcs",
-            "url":"https://github.com/zuoshoupai/simphp.git"
-        }
-    ],
+    }, 
     "autoload": {
         "psr-4": { 
             "Controller\\":"app",
