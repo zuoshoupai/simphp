@@ -1,0 +1,18 @@
+{
+    "require": {
+        "slim/slim": "4.0.0",
+        "slim/psr7": "^0.6.0",
+        "nyholm/psr7": "^1.2",
+        "nyholm/psr7-server": "^0.3.0",
+        "guzzlehttp/psr7": "^1.6",
+        "http-interop/http-factory-guzzle": "^1.0",
+        "zendframework/zend-diactoros": "^2.1",
+        "catfan/medoo": "^1.7"
+    }, 
+    "autoload": {
+        "psr-4": { 
+            "Controller\\":"app",
+            "Model\\":"app"
+         }
+    }
+}
