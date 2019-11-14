@@ -1,11 +1,11 @@
 {
-    "name": "zane/slight_Api",
+    "name": "lize/zanePhp",
     "description": "zane",
     "type": "project",
     "license": "1",
     "authors": [
         {
-            "name": "zane",
+            "name": "lize",
             "email": "15373850656@163.com"
         }
     ],
