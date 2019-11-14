@@ -3,9 +3,9 @@ return array(
     'mysql'=>array(
             'database_type' => 'mysql',
             'database_name' => 'simapi',
-            'server' => '132.232.70.106',
-            'username' => 'simapi',
-            'password' => 'zuoshoupai2019',
+            'server' => 'localhost',
+            'username' => 'root',
+            'password' => 'root',
          
             // [optional]
             'charset' => 'utf8',
