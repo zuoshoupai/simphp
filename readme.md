@@ -33,7 +33,7 @@ use \Model\model\loadConfig as Config;
 class ###Class
 {
     public function demo(){ 
-        $APPID=Config::get('appid');  
+        $APPID=Config::get('zfb.appid');  
         .......
     } 
 }
