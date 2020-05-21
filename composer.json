@@ -7,12 +7,13 @@
         "guzzlehttp/psr7": "^1.6",
         "http-interop/http-factory-guzzle": "^1.0",
         "zendframework/zend-diactoros": "^2.1",
-        "catfan/medoo": "^1.7"
+        "catfan/medoo": "^1.7",
+        "slim/php-view": "^2.2"
     }, 
     "autoload": {
         "psr-4": { 
-            "Controller\\":"app",
-            "Model\\":"app"
+            "App\\":"app",
+            "Core\\":"core"
          }
     }
 }

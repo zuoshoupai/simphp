@@ -1,8 +1,8 @@
 <?php
-namespace Model\model;
+namespace Core;
 use Medoo\Medoo;
-use \Model\model\loadConfig as Config;
-class dbModel extends medoo
+use Core\loadConfig as Config;
+class Db extends medoo
 {
     public function __construct(){ 
         $database=Config::get('mysql'); 

@@ -1,9 +1,9 @@
 <?php
-namespace Model\model;
+namespace Core;
 class loadConfig {
     static $con;
      function  __construct(){
-         self::$con=include(ROOT_PATH.'/lib/config.php'); 
+         self::$con=include(ROOT_PATH.'/person/config.php'); 
      }
      static function get($key){
          $re=new self(); 
