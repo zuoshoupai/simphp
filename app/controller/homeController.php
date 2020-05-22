@@ -10,9 +10,8 @@ class homeController
         return $renderer->render($response, "hello.php", $param);
     } 
 	public function list($req,$res,$args){
-        echo 'This is list';
-        $Db=new Db();
-        $user=$Db->select("user",'*');
+        echo 'This is list'; 
+        $user=Db::table()->select("booking_class",'*');
         var_dump($user); 
     } 
 }

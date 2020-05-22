@@ -1,8 +1,8 @@
-# 欢迎使用 slimphp1.0
+# 欢迎使用 slimphp1.2
 
 ------
 
-这是一个轻量的接口框架，以slimV4为基础，引入medoo模块来操作数据库，并独立封装出控制器和模型，以及配置文件：
+这是一个轻量的接口框架，以slimV4为基础，数据库模块使用medoo，视图模块使用php-view，已封装好控制器和模型，以及配置文件：
 ### 快速上手
 ```
 1. 克隆代码
@@ -23,10 +23,10 @@ composer install
 > 入口放在`/public`下的`index.php`，
 
 ### 控制器与模型
->控制器与模型的命名空间分别是Controller和Model，指向根目录`/app`，默认引用示例：`\Controller\controller\homeController`、`use Model\model\dbModel as Db`
+>App命名空间指向根目录`/app`，控制器与模型都放在其下。默认引用示例：`\App\controller\homeController`、`use Model\model\dbModel as Db`
 
 ### 配置文件与公共函数
->配置文件和公共函数都存放在根目录`/lib`下，公共函数可以直接使用，配置文件使用示例如下：
+>配置文件和公共函数都存放在根目录`/person`下，公共函数可以直接使用，配置文件使用示例如下：
 ```php
 <?php
 use \Model\model\loadConfig as Config;  
@@ -45,12 +45,24 @@ class ###Class
 use Model\model\dbModel as Db;
 class ###Class
 { 
-	public function list($req,$res,$args){ 
+    public function list($req,$res,$args){ 
+        //方法一
         $Db=new Db();
         $data=$Db->select("table",'*');
+        //方法二
+       $data=Db::table()->select("table",'*');
         var_dump($data); 
     } 
 }
+```
+### 视图操作
+>视图使用使用php-view模块，引用示例如下：
+```php 
+use Slim\Views\PhpRenderer;
+ ................
+$renderer = new PhpRenderer('templates');
+$param=['title'=>99858,'content'=>'i love this'];
+return $renderer->render($response, "hello.php", $param);
 ```
 ### 其它
 >本框架基于slim框架，可完全参考slim文档进行开发。感谢使用，如有疑问，请发邮件到245754047@qq.com
