@@ -23,13 +23,13 @@ composer install
 > 入口放在`/public`下的`index.php`，
 
 ### 控制器与模型
->App命名空间指向根目录`/app`，控制器与模型都放在其下。默认引用示例：`\App\controller\homeController`、`use Model\model\dbModel as Db`
+>App命名空间指向根目录`/app`，控制器与模型都放在其下。默认引用示例：`App\controller\homeController`、`App\model\userModel;`
 
 ### 配置文件与公共函数
 >配置文件和公共函数都存放在根目录`/person`下，公共函数可以直接使用，配置文件使用示例如下：
 ```php
 <?php
-use \Model\model\loadConfig as Config;  
+use Core\loadConfig as Config;  
 class ###Class
 {
     public function demo(){ 
@@ -42,7 +42,7 @@ class ###Class
 >数据库操作使用medoo模块，操作方法可参考[medoo文档](https://medoo.lvtao.net/1.2/doc.php),引用示例如下：
 ```php
 <?php 
-use Model\model\dbModel as Db;
+use Core\Db;;
 class ###Class
 { 
     public function list($req,$res,$args){ 
