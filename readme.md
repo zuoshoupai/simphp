@@ -1,4 +1,4 @@
-# 欢迎使用 slimphp1.2
+# 欢迎使用 slimphp1.3
 
 ------
 
@@ -15,7 +15,7 @@ composer install
  
 ### 路由
 
-> 路由功能完全保留slim原型，请参考[slim文档](https://www.slimframework.com/docs/v4/)
+> 路由功能完全保留slim原型，并分离出单独文件放在person目录下的route.php文件。具体使用请参考[slim文档](https://www.slimframework.com/docs/v4/)
 
 ------
 
